@@ -1,0 +1,91 @@
+:root {
+--bg: #0f0f12;
+--card: #17171c;
+--gold: #d8b26e;
+--text: #f5f1e8;
+--muted: #b6af9f;
+--line: rgba(216, 178, 110, 0.25);
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+color: var(--text);
+background: var(--bg);
+line-height: 1.7;
+}
+
+h1,
+h2,
+.logo {
+font-family: "Noto Serif SC", serif;
+}
+
+.container {
+width: min(1120px, 92%);
+margin: 0 auto;
+}
+
+.hero {
+min-height: 88vh;
+background: linear-gradient(rgba(9, 9, 11, 0.6), rgba(9, 9, 11, 0.65)),
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1900&q=80") center/cover;
+display: flex;
+flex-direction: column;
+}
+
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 0;
+}
+
+.logo {
+font-size: 1.25rem;
+letter-spacing: 1px;
+}
+
+.nav ul {
+display: flex;
+gap: 28px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav a {
+color: var(--text);
+text-decoration: none;
+opacity: 0.92;
+}
+
+.hero-content {
+margin: auto;
+max-width: 700px;
+}
+
+.kicker {
+color: var(--gold);
+letter-spacing: 2px;
+text-transform: uppercase;
+font-size: 0.9rem;
+}
+
+h1 {
+font-size: clamp(2rem, 6vw, 3.8rem);
+line-height: 1.2;
+margin: 8px 0 18px;
+}
+
+.btn {
+display: inline-block;
+margin-top: 20px;
+background: linear-gradient(120deg, #c79a4e, #e6c98f);
+color: #2a1f0f;
+padding: 12px 24px;
+border-radius: 999px;
